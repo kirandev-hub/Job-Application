@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">Job Application</h1>
+
+    <form class="form">
+
+      <!-- Personal Info -->
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Enter your first name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Enter your last name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" required>
+      </div>
+
+      <!-- Job Info -->
+      <div class="form-group">
+        <label for="position">Position Applying For</label>
+        <input type="text" id="position" placeholder="e.g. Frontend Developer">
+      </div>
+
+      <div class="form-group">
+        <label for="exp">Experience</label>
+        <textarea id="exp" rows="3" placeholder="Your work experience..."></textarea>
+      </div>
+
+      <!-- Skills -->
+      <div class="form-group">
+        <label>Skills</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="skills"> HTML</label>
+          <label><input type="checkbox" name="skills"> CSS</label>
+          <label><input type="checkbox" name="skills"> JavaScript</label>
+          <label><input type="checkbox" name="skills"> UI/UX</label>
+          <label><input type="checkbox" name="skills"> Content Creation</label>
+        </div>
+      </div>
+
+      <!-- Resume -->
+      <div class="form-group">
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume">
+      </div>
+
+      <!-- About -->
+      <div class="form-group">
+        <label for="about">About You</label>
+        <textarea id="about" rows="4" placeholder="Write about yourself..."></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" id="button" onclick="sayOkay" class="submit-btn">Submit Application</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
